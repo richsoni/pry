@@ -179,6 +179,7 @@ describe "hist" do
 
     after do
       Pry.config.history.file = @old_file
+      Pry.config.history.histignore = nil
     end
 
     it "displays history only for current session" do
